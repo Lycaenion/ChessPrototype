@@ -5,12 +5,12 @@ import java.util.List;
 
 public class Pawn extends Piece {
 
-    public Pawn(boolean color){
-        super(color);
+    public Pawn(int x, int y, boolean color){
+        super(x, y, color);
     }
 
     @Override
-    List<Tile> getMoves(ChessBoard chessBoard, int posX, int posY) {
+    List<Tile> getMoves(ChessBoard chessBoard) {
         List<Tile> possibleMoves = new ArrayList<Tile>();
 
         return possibleMoves;

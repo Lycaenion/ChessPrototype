@@ -5,8 +5,8 @@ import java.util.List;
 abstract class Piece {
     public static final boolean WHITE_COLOR = true;
     public static final boolean BLACK_COLOR = false;
-    private int x;
-    private int y;
+    protected int x;
+    protected int y;
     public boolean color;
 
     public Piece(int x, int y, boolean color) {

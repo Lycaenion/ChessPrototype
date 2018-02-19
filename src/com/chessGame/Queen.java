@@ -4,13 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Queen extends Piece {
-    public Queen(boolean color){
-        super(color);
+    public Queen(int x, int y, boolean color) {
+        super(x, y, color);
     }
 
 
+
     @Override
-    List<Tile> getMoves(ChessBoard chessBoard, int posX, int posY) {
+    List<Tile> getMoves(ChessBoard chessBoard) {
         List<Tile> possibleMoves = new ArrayList<Tile>();
 
 
