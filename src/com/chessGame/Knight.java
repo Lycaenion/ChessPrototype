@@ -1,4 +1,4 @@
-package chessGame;
+package com.chessGame;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +7,8 @@ public class Knight extends Piece {
     public Knight(boolean color) {
         super(color);
     }
+
+
 
     @Override
     List<Tile> getMoves(ChessBoard chessBoard, int posX, int posY) {

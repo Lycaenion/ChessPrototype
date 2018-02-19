@@ -1,10 +1,11 @@
-package chessGame;
+package com.chessGame;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class King extends Piece {
-    public King(boolean color){
+public class Pawn extends Piece {
+
+    public Pawn(boolean color){
         super(color);
     }
 
@@ -12,10 +13,7 @@ public class King extends Piece {
     List<Tile> getMoves(ChessBoard chessBoard, int posX, int posY) {
         List<Tile> possibleMoves = new ArrayList<Tile>();
 
-
-
         return possibleMoves;
     }
-
 
 }

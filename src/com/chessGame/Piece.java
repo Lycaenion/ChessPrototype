@@ -1,17 +1,21 @@
-package chessGame;
+package com.chessGame;
 
 import java.util.List;
 
 abstract class Piece {
     public static final boolean WHITE_COLOR = true;
     public static final boolean BLACK_COLOR = false;
+    private int x;
+    private int y;
     public boolean color;
 
-    public Piece(boolean color){
+    public Piece(int x, int y, boolean color) {
+        this.x = x;
+        this.y = y;
         this.color = color;
-
     }
-    abstract List<Tile> getMoves(ChessBoard chessBoard, int posX, int posY);
+
+    abstract List<Tile> getMoves(ChessBoard chessBoard);
 
     static boolean outOfBounds(int x, int y){
         if(x > 7 || x < 0 || y > 7 || y < 0){
