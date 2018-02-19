@@ -14,11 +14,48 @@ public class Rook extends Piece {
     @Override
     List<Tile> getMoves(ChessBoard chessBoard) {
         List<Tile> possibleMoves = new ArrayList<Tile>();
-        
 
+        for (int i = x+1; i < 7; i++){
+            Tile tile = new Tile(i, y);
+            checkMove(possibleMoves, tile, chessBoard);
+
+            Piece pieceToCheck = chessBoard.board[i][y];
+            if(pieceToCheck != null){
+                break;
+            }
+        }
+
+        for (int i = x-1; i > 0; i--){
+            Tile tile = new Tile(i, y);
+            checkMove(possibleMoves, tile, chessBoard);
+
+            Piece pieceToCheck = chessBoard.board[i][y];
+            if(pieceToCheck != null){
+                break;
+            }
+        }
+
+        for (int i = y+1 ; i < 7; i++){
+            Tile tile = new Tile(x, i);
+            checkMove(possibleMoves, tile, chessBoard);
+
+            Piece pieceToCheck = chessBoard.board[x][i];
+            if(pieceToCheck != null){
+                break;
+            }
+        }
+
+        for (int i = y-1; i > 0; i--){
+            Tile tile = new Tile(i, y);
+            checkMove(possibleMoves, tile, chessBoard);
+
+            Piece pieceToCheck = chessBoard.board[x][i];
+            if(pieceToCheck != null){
+                break;
+            }
+        }
 
         return possibleMoves;
     }
-
 
 }

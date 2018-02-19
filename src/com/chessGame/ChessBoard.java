@@ -55,11 +55,11 @@ public class ChessBoard {
     }
 
     public List<Piece> toList(){
-        List<Piece> piecesAlive = new ArrayList<Piece>();
+        List<Piece> pieces = new ArrayList<Piece>();
         for (Piece[] array : board) {
-            piecesAlive.addAll(Arrays.asList(array));
+            pieces.addAll(Arrays.asList(array));
         }
-        return piecesAlive;
+        return pieces;
     }
 
     public List<Piece> getMovablePieces(boolean color){
