@@ -1,4 +1,4 @@
-package com.chessGame;
+package chessGame;
 
 public abstract class Player {
 

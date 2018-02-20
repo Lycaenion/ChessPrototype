@@ -1,14 +1,12 @@
-package com.chessGame;
+package chessGame;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Queen extends Piece {
-    public Queen(int x, int y, boolean color) {
+public class Bishop extends Piece {
+    public Bishop(int x, int y, boolean color) {
         super(x, y, color);
     }
-
-
 
     @Override
     List<Tile> getMoves(ChessBoard chessBoard) {
@@ -18,6 +16,5 @@ public class Queen extends Piece {
 
         return possibleMoves;
     }
-
 
 }

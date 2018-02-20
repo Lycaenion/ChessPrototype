@@ -1,4 +1,4 @@
-package com.chessGame;
+package chessGame;
 
 public class AI extends Player {
 

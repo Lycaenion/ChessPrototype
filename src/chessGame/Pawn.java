@@ -1,4 +1,4 @@
-package com.chessGame;
+package chessGame;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +12,15 @@ public class Pawn extends Piece {
     @Override
     List<Tile> getMoves(ChessBoard chessBoard) {
         List<Tile> possibleMoves = new ArrayList<Tile>();
+
+        Tile tile;
+        if(color){
+            tile = new Tile(x+1, y);
+        }else {
+            tile = new Tile(x-1, y);
+        }
+        checkMove(possibleMoves, tile, chessBoard);
+
 
         return possibleMoves;
     }

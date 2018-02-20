@@ -1,0 +1,20 @@
+.chess-space {
+    /* board size - 360px - 8 spaces */
+    -fx-min-height:  45px;
+    -fx-min-width:   45px;
+    -fx-pref-height: 45px;
+    -fx-pref-width:  45px;
+    -fx-max-height:  45px;
+    -fx-max-width:   45px;
+
+    /* prevent rounded buttons */
+    -fx-background-radius: 0em;
+}
+
+.chess-space-light {
+    -fx-background-color: white;
+}
+
+.chess-space-dark {
+    -fx-background-color: black;
+}

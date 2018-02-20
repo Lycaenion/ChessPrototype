@@ -1,4 +1,4 @@
-package com.chessGame;
+package chessGame;
 
 public class Tile {
     int x;
