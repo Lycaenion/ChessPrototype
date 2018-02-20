@@ -14,7 +14,6 @@ public class ChessBoard {
 
     public ChessBoard() {
         board = new Piece[NUMBER_OF_ROWS][NUMBER_OF_COLUMNS];
-        chessGUI.ChessBoard GUIBoard = new chessGUI.ChessBoard();
 
         // Rooks
         board[0][0] = new Rook(0, 0, Piece.WHITE_COLOR);

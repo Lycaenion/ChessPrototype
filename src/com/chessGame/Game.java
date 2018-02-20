@@ -12,7 +12,7 @@ public class Game {
         this.chessBoard = new ChessBoard();
     }
 
-    void runGame(){
+    public void runGame(){
         while(true){
             playerOne.doMove(chessBoard);
             playerTwo.doMove(chessBoard);
