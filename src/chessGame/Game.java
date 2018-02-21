@@ -13,6 +13,7 @@ public class Game {
     }
 
     public void runGame(ChessGUI gui) {
+        gui.printBoard(chessBoard);
 //        gui.printBoard();
 //        while (true) {
 //            playerOne.doMove(white);

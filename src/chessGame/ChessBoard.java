@@ -11,7 +11,7 @@ public class ChessBoard {
     Piece[][] board;
 
     public ChessBoard() {
-        board = new Piece[NUMBER_OF_ROWS][NUMBER_OF_COLUMNS];
+        board = new Piece[NUMBER_OF_COLUMNS][NUMBER_OF_ROWS];
 
         // Rooks
         board[0][0] = new Rook(0, 0, Piece.WHITE_COLOR);

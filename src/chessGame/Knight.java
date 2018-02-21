@@ -1,7 +1,5 @@
 package chessGame;
 
-import javafx.scene.image.Image;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,8 +7,6 @@ public class Knight extends Piece {
     public Knight(int x, int y, boolean color) {
         super(x, y, color);
     }
-
-
 
     @Override
     List<Tile> getMoves(ChessBoard chessBoard) {
@@ -44,6 +40,5 @@ public class Knight extends Piece {
         checkMove(possibleMoves, tile, chessBoard);
 
         return possibleMoves;
-
     }
 }
