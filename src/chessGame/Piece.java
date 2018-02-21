@@ -1,5 +1,7 @@
 package chessGame;
 
+import javafx.scene.image.Image;
+
 import java.util.List;
 
 abstract class Piece {
@@ -8,11 +10,23 @@ abstract class Piece {
     protected int x;
     protected int y;
     public boolean color;
+    Image image;
 
     public Piece(int x, int y, boolean color) {
         this.x = x;
         this.y = y;
         this.color = color;
+        String location = "chessImages/";
+        String filename = getColor(this.color) + "_" + this.getClass().getSimpleName() + ".png";
+        this.image = new Image(location + filename);
+    }
+
+    public String getColor(boolean color){
+        if(color){
+            return "white";
+        }else{
+            return "black";
+        }
     }
 
     abstract List<Tile> getMoves(ChessBoard chessBoard);

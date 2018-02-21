@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class ChessBoard {
-    private final int NUMBER_OF_ROWS = 8; // determined by x
-    private final int NUMBER_OF_COLUMNS = 8; // determined by
+    public static final int NUMBER_OF_ROWS = 8; // determined by x
+    public static final int NUMBER_OF_COLUMNS = 8; // determined by
     Piece[][] board;
 
     public ChessBoard() {

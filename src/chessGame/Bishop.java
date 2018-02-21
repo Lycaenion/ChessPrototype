@@ -1,5 +1,7 @@
 package chessGame;
 
+import javafx.scene.image.Image;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,6 +9,8 @@ public class Bishop extends Piece {
     public Bishop(int x, int y, boolean color) {
         super(x, y, color);
     }
+
+
 
     @SuppressWarnings("Duplicates")
     @Override
