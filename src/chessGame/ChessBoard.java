@@ -8,7 +8,6 @@ import java.util.stream.Collectors;
 public class ChessBoard {
     private final int NUMBER_OF_ROWS = 8; // determined by x
     private final int NUMBER_OF_COLUMNS = 8; // determined by
-
     Piece[][] board;
 
     public ChessBoard() {
@@ -42,10 +41,9 @@ public class ChessBoard {
 
         //Pawns
         for (int column = 0; column < NUMBER_OF_COLUMNS; column++) {
-            board[2][column] = new Pawn(2, column, Piece.WHITE_COLOR);
+            board[1][column] = new Pawn(1, column, Piece.WHITE_COLOR);
             board[6][column] = new Pawn(6, column, Piece.BLACK_COLOR);
         }
-
 
         getMovablePieces(Piece.WHITE_COLOR).stream()
                 .forEach(piece -> System.out.println(piece));

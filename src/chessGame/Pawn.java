@@ -16,7 +16,7 @@ public class Pawn extends Piece {
         Tile tile;
         if(color){
             tile = new Tile(x+1, y);
-        }else {
+        }else{
             tile = new Tile(x-1, y);
         }
         checkMove(possibleMoves, tile, chessBoard);

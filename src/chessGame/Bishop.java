@@ -8,60 +8,61 @@ public class Bishop extends Piece {
         super(x, y, color);
     }
 
+    @SuppressWarnings("Duplicates")
     @Override
     List<Tile> getMoves(ChessBoard chessBoard) {
        List<Tile> possibleMoves = new ArrayList<Tile>();
 
         for (int i = 1; i < 8; i++){
-            Tile tile = new Tile(x + i, y + i);
+            Tile tile = new Tile(x+i, y+i);
             checkMove(possibleMoves, tile, chessBoard);
 
-            if(outOfBounds(x + i, y + i)){
+            if(outOfBounds(x+i, y+i)){
                 break;
             }
 
-            Piece pieceToCheck = chessBoard.board[x + i][y + i];
+            Piece pieceToCheck = chessBoard.board[x+i][y+i];
             if(pieceToCheck != null) {
                 break;
             }
         }
 
         for (int i = 1; i < 8; i++){
-            Tile tile = new Tile(x - i, y - i);
+            Tile tile = new Tile(x-i, y-i);
             checkMove(possibleMoves, tile, chessBoard);
 
-            if(outOfBounds(x - i, y - i)){
+            if(outOfBounds(x-i, y-i)){
                 break;
             }
-            Piece pieceToCheck = chessBoard.board[x - i][y - i];
+            Piece pieceToCheck = chessBoard.board[x-i][y-i];
             if(pieceToCheck != null) {
                 break;
             }
         }
 
         for (int i = 1; i < 8; i++){
-            Tile tile = new Tile(x + i, y - i);
+            Tile tile = new Tile(x+i, y-i);
             checkMove(possibleMoves, tile, chessBoard);
 
-            if(outOfBounds(x + i, y - i)){
+            if(outOfBounds(x+i, y-i)){
                 break;
             }
 
-            Piece pieceToCheck = chessBoard.board[x + i][y - i];
+            Piece pieceToCheck = chessBoard.board[x+i][y-i];
             if(pieceToCheck != null) {
                 break;
             }
         }
 
         for (int i = 1; i < 8; i++){
-            Tile tile = new Tile(x - i, y + i);
+            Tile tile = new Tile(x-i, y+i);
             checkMove(possibleMoves, tile, chessBoard);
 
-            if(outOfBounds(x - i, y + i)){
+            if(outOfBounds(x-i, y+i)){
                 break;
             }
 
-            Piece pieceToCheck = chessBoard.board[x - i][y + i];
+            Piece pieceToCheck = chessBoard.board[x-i][y+i];
             if(pieceToCheck != null) {
                 break;
             }

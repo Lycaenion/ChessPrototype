@@ -12,28 +12,28 @@ public class King extends Piece {
     List<Tile> getMoves(ChessBoard chessBoard) {
         List<Tile> possibleMoves = new ArrayList<Tile>();
 
-        Tile tile = new Tile(x + 1, y);
+        Tile tile = new Tile(x+1, y);
         checkMove(possibleMoves, tile, chessBoard);
 
-        tile = new Tile(x - 1, y);
+        tile = new Tile(x-1, y);
         checkMove(possibleMoves, tile, chessBoard);
 
-        tile = new Tile(x, y + 1);
+        tile = new Tile(x, y+1);
         checkMove(possibleMoves, tile, chessBoard);
 
-        tile = new Tile(x, y - 1);
+        tile = new Tile(x, y-1);
         checkMove(possibleMoves, tile, chessBoard);
 
-        tile = new Tile(x + 1, y + 1);
+        tile = new Tile(x+1, y+1);
         checkMove(possibleMoves, tile, chessBoard);
 
-        tile = new Tile(x - 1, y - 1);
+        tile = new Tile(x-1, y-1);
         checkMove(possibleMoves, tile, chessBoard);
 
-        tile = new Tile(x + 1, y - 1);
+        tile = new Tile(x+1, y-1);
         checkMove(possibleMoves, tile, chessBoard);
 
-        tile = new Tile(x - 1, y + 1);
+        tile = new Tile(x-1, y+1);
         checkMove(possibleMoves, tile, chessBoard);
 
 

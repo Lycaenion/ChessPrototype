@@ -27,7 +27,7 @@ public class Queen extends Piece {
             }
         }
 
-        for (int i = x - 1; i > 0; i--) {
+        for (int i = x-1; i > 0; i--) {
             Tile tile = new Tile(i, y);
             checkMove(possibleMoves, tile, chessBoard);
 
@@ -37,7 +37,7 @@ public class Queen extends Piece {
             }
         }
 
-        for (int i = y + 1; i < 8; i++) {
+        for (int i = y+1; i < 8; i++) {
             Tile tile = new Tile(x, i);
             checkMove(possibleMoves, tile, chessBoard);
 
@@ -47,7 +47,7 @@ public class Queen extends Piece {
             }
         }
 
-        for (int i = y - 1; i > 0; i--) {
+        for (int i = y-1; i > 0; i--) {
             Tile tile = new Tile(x, i);
             checkMove(possibleMoves, tile, chessBoard);
 
@@ -60,55 +60,55 @@ public class Queen extends Piece {
         //diagonal
 
         for (int i = 1; i < 8; i++){
-            Tile tile = new Tile(x + i, y + i);
+            Tile tile = new Tile(x+i, y+i);
             checkMove(possibleMoves, tile, chessBoard);
 
-            if(outOfBounds(x + i, y + i)){
+            if(outOfBounds(x+i, y+i)){
                 break;
             }
 
-            Piece pieceToCheck = chessBoard.board[x + i][y + i];
+            Piece pieceToCheck = chessBoard.board[x+i][y+i];
             if(pieceToCheck != null) {
                 break;
             }
         }
 
         for (int i = 1; i < 8; i++){
-            Tile tile = new Tile(x - i, y - i);
+            Tile tile = new Tile(x-i, y-i);
             checkMove(possibleMoves, tile, chessBoard);
 
-            if(outOfBounds(x - i, y - i)){
+            if(outOfBounds(x-i, y-i)){
                 break;
             }
-            Piece pieceToCheck = chessBoard.board[x - i][y - i];
+            Piece pieceToCheck = chessBoard.board[x-i][y-i];
             if(pieceToCheck != null) {
                 break;
             }
         }
 
         for (int i = 1; i < 8; i++){
-            Tile tile = new Tile(x + i, y - i);
+            Tile tile = new Tile(x+i, y-i);
             checkMove(possibleMoves, tile, chessBoard);
 
-            if(outOfBounds(x + i, y - i)){
+            if(outOfBounds(x+i, y-i)){
                 break;
             }
 
-            Piece pieceToCheck = chessBoard.board[x + i][y - i];
+            Piece pieceToCheck = chessBoard.board[x+i][y-i];
             if(pieceToCheck != null) {
                 break;
             }
         }
 
         for (int i = 1; i < 8; i++){
-            Tile tile = new Tile(x - i, y + i);
+            Tile tile = new Tile(x-i, y+i);
             checkMove(possibleMoves, tile, chessBoard);
 
-            if(outOfBounds(x - i, y + i)){
+            if(outOfBounds(x-i, y+i)){
                 break;
             }
 
-            Piece pieceToCheck = chessBoard.board[x - i][y + i];
+            Piece pieceToCheck = chessBoard.board[x-i][y+i];
             if(pieceToCheck != null) {
                 break;
             }
